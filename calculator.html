@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+       body{
+        margin-left: auto;
+        width: 100vw;
+       }
+        .div1,.div2{
+            display: flex;
+            margin-bottom: 1%;
+            margin-left: 40%;
+           
+            
+
+           
+        }
+        div button{
+            margin-right: 1%;
+        }
+        div input{
+            margin-right: 1%;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <input type="number" placeholder="enter 1st Number" id="firstno">
+        <input type="number" placeholder="enter 2st Number" id="secondno">
+     </div>
+     <div class="div2">
+        <button onclick="add()">ADD</button>
+        <button onclick="sub()">SUBTRACT</button>
+        <button onclick="mult()">MULTIPLY</button>
+        <button onclick="div()">DIVIDE</button>
+     </div>
+</body>
+</html>
+<script>
+    function add(){
+        let fir=parseFloat(document.getElementById("firstno").value);
+        let sec=parseFloat(document.getElementById("secondno").value);
+        alert(fir+sec);
+     }
+   
+     
+     function sub(){
+        let fir=parseFloat(document.getElementById("firstno").value);
+        let sec=parseFloat(document.getElementById("secondno").value);
+        alert(fir-sec);
+     }
+     function mult(){
+        let fir=parseFloat(document.getElementById("firstno").value);
+        let sec=parseFloat(document.getElementById("secondno").value);
+        alert(fir*sec);
+     }
+     function div(){
+        let fir=parseFloat(document.getElementById("firstno").value);
+        let sec=parseFloat(document.getElementById("secondno").value);
+        alert(fir/sec);
+     }
+    
+</script>
